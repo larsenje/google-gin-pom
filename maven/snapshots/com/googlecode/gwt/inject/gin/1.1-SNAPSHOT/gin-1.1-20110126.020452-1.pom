@@ -45,7 +45,7 @@
 		<snapshotRepository>
 			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype Nexus Snapshots</name>
-			<url>file:\\"c:\Documents and Settings\jlarsen\google-gin-pom\maven2\snapshots"</url>
+			<url>file://c:\temp2</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<dependencies>

@@ -45,7 +45,7 @@
 		<snapshotRepository>
 			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype Nexus Snapshots</name>
-			<url>file://c:\temp2</url>
+			<url>file:\\c:\temp3</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<dependencies>

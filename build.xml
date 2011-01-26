@@ -8,13 +8,13 @@
 		uri="antlib:org.apache.maven.artifact.ant" classpathref="maven-ant-tasks.classpath" />
 
 
-	<property name="gin.jar.file" value="gin-1.0.jar" />
+	<property name="gin.jar.file" value="gin-1.1-SNAPSHOT.jar" />
 	<property name="gin.javadoc.file" value="gin-1.0-javadoc.jar" />
 
 	<target name="-check">
 
 	</target>
-
+<!--
 	<target name="install" depends="-check">
 		<artifact:pom id="gin-pom" file="pom.xml" />
 		<artifact:install file="${gin.jar.file}">
@@ -22,12 +22,13 @@
 			<attach file="${gin.javadoc.file}" classifier="javadoc" />
 		</artifact:install>
 	</target>
+	-->
 
 	<target name="deploy" depends="-check">
 		<artifact:pom id="gin-pom" file="pom.xml" />
 		<artifact:deploy file="${gin.jar.file}">
 			<pom refid="gin-pom" />
-			<attach file="${gin.javadoc.file}" classifier="javadoc" />
+			<!--<attach file="${gin.javadoc.file}" classifier="javadoc" />-->
 		</artifact:deploy>
 	</target>
 

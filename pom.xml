@@ -37,15 +37,15 @@
 		<url>http://code.google.com/p/google-gin/issues/list</url>
 	</issueManagement>
 	<scm>
-		<connection>http://google-gin.googlecode.com/svn/tags/1.0.0</connection>
-		<developerConnection>https://google-gin.googlecode.com/svn/tags/1.0.0</developerConnection>
-		<url>http://code.google.com/p/google-gin/source/browse/</url>
+		<connection>scm:git@github.com:larsenje/google-gin-pom.git</connection>
+		<developerConnection>scm:git@github.com:larsenje/google-gin-pom.git</developerConnection>
+		<url>scm:git@github.com:larsenje/google-gin-pom.git</url>
 	</scm>
 	<distributionManagement>
 		<snapshotRepository>
 			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype Nexus Snapshots</name>
-			<url>file:\\"c:\Documents and Settings\jlarsen\google-gin-pom\maven2\snapshots"</url>
+			<url>https://github.com/larsenje/google-gin-pom/tree/master/maven/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
 	<dependencies>

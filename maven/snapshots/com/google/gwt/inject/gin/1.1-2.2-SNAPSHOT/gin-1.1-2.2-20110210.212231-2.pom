@@ -101,7 +101,7 @@
 		</dependency>
 	</dependencies>
 	<properties>
-		<com.google.gwt.version>2.1.1</com.google.gwt.version>
+		<com.google.gwt.version>2.2.0-rc1</com.google.gwt.version>
 		<guiceVersion>3.0-rc2</guiceVersion>
 	</properties>
 </project>

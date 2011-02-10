@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.google.gwt.inject</groupId>
+  <artifactId>gin</artifactId>
+  <version>1.2-2.2-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20110210.204634</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20110210204634</lastUpdated>
+  </versioning>
+</metadata>

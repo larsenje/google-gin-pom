@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.google.gwt.inject</groupId>
+	<artifactId>gin</artifactId>
+	<version>1.1-2.2-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>GIN (GWT INjection)</name>
+	<description>GIN (GWT INjection) brings automatic dependency injection to Google Web Toolkit client-side code. GIN is built on top of Guice and uses (a subset of) Guice's binding language. </description>
+	<url>http://code.google.com/p/google-gin/</url>
+	<developers>
+		<developer>
+			<id>bstoler</id>
+			<name>Brian Stoler</name>
+		</developer>
+		<developer>
+			<id>aragos</id>
+			<name>Peter Schmitt</name>
+		</developer>
+		<developer>
+			<id>limpbizkit</id>
+			<name>Jesse Wilson</name>
+		</developer>
+		<developer>
+			<id>robbie.vanbrabant</id>
+			<name>Robbie Vanbrabant</name>
+		</developer>
+	</developers>
+	<licenses>
+		<license>
+			<name>Apache License 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0</url>
+		</license>
+	</licenses>
+	<issueManagement>
+		<system>Google code</system>
+		<url>http://code.google.com/p/google-gin/issues/list</url>
+	</issueManagement>
+	<!-- -->
+	<scm>
+		<connection>https://google-gin-snapshot.googlecode.com/svn/maven</connection>
+		<developerConnection>https://google-gin-snapshot.googlecode.com/svn/maven</developerConnection>
+		<url>http://code.google.com/p/google-gin/source/browse/</url>
+	</scm>
+	<distributionManagement>
+		<repository>
+			<id>googlecode.com</id>
+			<name>Google code Repo</name>
+			<url>dav:https://google-gin-snapshot.googlecode.com/svn/maven</url>
+		</repository>
+	</distributionManagement>
+
+
+	<build>
+		<!-- 
+		 <extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav</artifactId>
+				<version>1.0-beta-6</version>
+			</extension>
+		</extensions>
+		 -->
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.0-beta-9</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>${guiceVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.inject.extensions</groupId>
+			<artifactId>guice-assistedinject</artifactId>
+			<version>${guiceVersion}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-user</artifactId>
+			<version>${com.google.gwt.version}</version>
+			<type>jar</type>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.google.gwt</groupId>
+			<artifactId>gwt-servlet</artifactId>
+			<version>${com.google.gwt.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.inject</groupId>
+			<artifactId>javax.inject</artifactId>
+			<version>1</version>
+		</dependency>
+	</dependencies>
+	
+	<repositories>
+		<repository><name>maven repo2</name>
+			<id>maven repo2</id>
+			<url>http://repo2.maven.org/maven2</url>
+		</repository>
+	</repositories>
+	<properties>
+		<com.google.gwt.version>2.2.0-rc1</com.google.gwt.version>
+		<guiceVersion>3.0-rc2</guiceVersion>
+	</properties>
+</project>

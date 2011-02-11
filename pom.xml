@@ -100,8 +100,15 @@
 			<version>1</version>
 		</dependency>
 	</dependencies>
+	
+	<repositories>
+		<repository><name>maven repo2</name>
+			<id>maven repo2</id>
+			<url>http://repo2.maven.org/maven2</url>
+		</repository>
+	</repositories>
 	<properties>
-		<com.google.gwt.version>2.1.1</com.google.gwt.version>
+		<com.google.gwt.version>2.2-rc1</com.google.gwt.version>
 		<guiceVersion>3.0-rc2</guiceVersion>
 	</properties>
 </project>
